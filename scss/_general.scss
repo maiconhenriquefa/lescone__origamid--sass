@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   background: $b1-color;
   border: 10px solid $b2-color;
   color: $c1-color;
@@ -11,6 +11,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 p {
