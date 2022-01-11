@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background: $b1-color;
+  border: 10px solid $b2-color;
+  color: $c1-color;
+  @include d(s) {
+    border: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  @include type-1(18);
+}
+
+.contact__title {
+  @extend .menu__title;
+}
+.menu__title {
+  display: flex;
+  @include type-1(18);
+  text-transform: uppercase;
+  @include d(s) {
+    margin-bottom: 40px;
+  }
+  &::after {
+    content: '';
+    position: relative;
+    top: 10px;
+    left: 5px;
+    display: inline-block;
+    width: 70%;
+    height: 2px;
+    background: $c1-color;
+  }
+}

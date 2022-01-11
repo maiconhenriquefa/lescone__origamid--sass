@@ -1,0 +1,53 @@
+// vaiables of grid
+$cols: 12;
+$gap: 20px;
+$l-device: 1200px;
+$m-device: 760px;
+$s-device: 480px;
+
+// mixins of media queries
+@mixin d($size) {
+  @if $size == l {
+    @media (min-width: #{$l-device}) {
+      @content;
+    }
+  } @else if $size == m {
+    @media (min-width: #{$m-device}) and (max-width: #{$l-device - 1}) {
+      @content;
+    }
+  } @else if $size == s {
+    @media (max-width: #{$m-device - 1}) {
+      @content;
+    }
+  }
+}
+
+//function grid
+@mixin grid($colInit, $colFinaly) {
+  grid-column: #{$colInit} / #{$colFinaly};
+  @content;
+}
+
+.grid {
+  grid-template-columns: repeat($cols, 1fr);
+  display: grid;
+  margin: 0 auto;
+  gap: $gap;
+}
+
+.container {
+  @extend .grid;
+  max-width: $l-device;
+}
+
+.grid-4 {
+  @include grid(1, 5);
+}
+
+.grid-5 {
+  @include grid(1, 6);
+}
+
+.grid-7 {
+  @include grid(7, -1);
+}
