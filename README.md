@@ -19,7 +19,7 @@ git clone https://github.com/maiconhenriquefa/lescone__origamid--sass.git
 ## Critérios considerados
 
 - Código limpo, fácil de entender
-- Prática usando SASS (variáveis, mixins, extensões, condicionais e loops)
+- Prática usando SASS (import, variáveis, escopo, mixins, extensões, referências, condicionais e loops)
 - Site responsivo, se ajustando para tamanhos de tela menor
 - Utilizando o grid layout
 - Interação com o padrão de arquitetura CSS, o BEM
