@@ -39,6 +39,12 @@ $s-device: 480px;
   @extend .grid;
   max-width: $l-device;
   box-sizing: border-box;
+  @include d(m) {
+    max-width: $m-device;
+  }
+  @include d(s) {
+    max-width: $s-device;
+  }
 }
 
 .grid-4 {
