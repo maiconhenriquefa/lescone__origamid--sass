@@ -1,6 +1,6 @@
 # Le Scone
 
-Site Le Scone criado no curso da Origamid para treinamento em Sass.
+Site Le Scone criado no curso da Origamid para treinamento em SASS.
 
 <img alt="Le Scone" src="./lescone.gif" width="650" height="400" />
 
@@ -19,7 +19,7 @@ git clone https://github.com/maiconhenriquefa/lescone__origamid--sass.git
 ## Critérios considerados
 
 - Código limpo, fácil de entender
-- Prática usando Sass (variáveis, mixins, extensões, condicionais e loops)
+- Prática usando SASS (variáveis, mixins, extensões, condicionais e loops)
 - Site responsivo, se ajustando para tamanhos de tela menor
 - Utilizando o grid layout
 - Interação com o padrão de arquitetura CSS, o BEM
