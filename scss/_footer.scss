@@ -1,0 +1,22 @@
+footer {
+  padding: 20px 0;
+  background: $c1-color;
+  box-shadow: (0 0 0 10px $c1-color);
+  p {
+    grid-column: 2/10;
+    color: $b1-color;
+    @include d(s) {
+      text-align: center;
+      grid-column: 1/-1;
+    }
+  }
+  a {
+    grid-column: 11;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    @include d(s) {
+      grid-column: 1/-1;
+    }
+  }
+}

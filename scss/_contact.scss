@@ -13,10 +13,10 @@
       gap: 0;
     }
   }
-  .grid-2 {
+  .grid-3 {
     @include grid(8, -1);
   }
-  .grid-1 {
+  .grid-2 {
     @include grid(1, 8);
   }
 
