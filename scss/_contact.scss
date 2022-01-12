@@ -1,0 +1,90 @@
+.contact {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  @include d(s) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.contact form {
+  .grid {
+    @include d(s) {
+      gap: 0;
+    }
+  }
+  .grid-2 {
+    @include grid(8, -1);
+  }
+  .grid-1 {
+    @include grid(1, 8);
+  }
+
+  label {
+    @include type-1(18);
+    display: block;
+  }
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    @include type-1(18);
+    color: $c1-color;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: 2px solid $b3-color;
+    background: transparent;
+    margin-bottom: 1rem;
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $b2-color;
+    }
+  }
+  textarea {
+    height: 120px;
+  }
+}
+
+input.contact__button {
+  @include type-1(18);
+  cursor: pointer;
+  color: $b3-color;
+  text-transform: uppercase;
+  border: 2px solid $b3-color;
+  background: transparent;
+  display: block;
+  width: 200px;
+  padding-top: 5px;
+  box-shadow: (3px 3px 0 -2px $b2-color, 5px 5px 0 0 $b3-color);
+  transition: 0.3s;
+  &:hover {
+    box-shadow: (3px 3px 0 -2px $b2-color, 3px 3px 0 0 $b2-color);
+  }
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $b3-color;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  @include d(l) {
+    text-align: right;
+    margin-top: -2.5em;
+  }
+  p {
+    margin: 2px;
+  }
+}
+
+.contact__map {
+  display: block;
+  box-shadow: (0 0 0 10px $b2-color);
+  box-sizing: border-box;
+  img {
+    width: 100%;
+  }
+}

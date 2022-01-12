@@ -3,6 +3,7 @@ body {
   padding: 0 10px;
   background: $b1-color;
   border: 10px solid $b2-color;
+  box-sizing: border-box;
   color: $c1-color;
   @include d(s) {
     border: none;
